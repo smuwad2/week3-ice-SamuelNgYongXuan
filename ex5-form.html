@@ -10,37 +10,37 @@
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <form>
             <div class="row g-3">
-                <div>
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName">
+                <div class="col-md-6 col-lg-4">
+                    <label class="d-block" for="fullName">Full Name</label>
+                    <input class="form-control" type="text" id="fullName">
                 </div>
 
                 <!-- Email -->
-                <div>
-                    <label for="email">Email address</label>
-                    <input type="email" id="email">
+                <div class="col-md-6 col-lg-4">
+                    <label class="d-block" for="email">Email address</label>
+                    <input class="form-control" type="email" id="email">
                 </div>
 
                 <!-- Gender -->
-                <div>
-                    <label>Gender</label>
-                    <div>
+                <div class="col-lg-4 col-md-6">
+                    <label class="d-block">Gender</label>
+                    <div class="form-check-inline">
                         <input type="radio" name="gender" id="male" value="male">
                         <label for="male">Male</label>
                     </div>
-                    <div>
+                    <div class="form-check-inline">
                         <input type="radio" name="gender" id="female" value="female">
                         <label for="female">Female</label>
                     </div>
                 </div>
 
                 <!-- Country -->
-                <div>
+                <div class="col-md-6 col-lg-4">
                     <label for="country">Country</label>
-                    <select id="country">
+                    <select class="form-select form-select-sm" id="country">
                         <option selected>Select your country</option>
                         <option>USA</option>
                         <option>Singapore</option>
@@ -49,8 +49,8 @@
                 </div>
 
                 <!-- Subscribe -->
-                <div>
-                    <div class="mt-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="mt-2">
                         <input type="checkbox" id="subscribe">
                         <label for="subscribe">
                             Subscribe to newsletter
@@ -60,8 +60,8 @@
 
                 <!-- Message -->
                 <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4"></textarea>
+                    <label class="d-block" for="message">Message</label>
+                    <textarea id="message" rows="4" class="form-control"></textarea>
                 </div>
 
                 <!-- Submit Button -->
